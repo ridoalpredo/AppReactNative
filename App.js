@@ -12,7 +12,9 @@ export default class App extends Component {
     return (
       <View>
         <Text> Hello World </Text>
+        <Text style={{color: "blue", fontSize: 14}}> Rido Alpredo </Text>
       </View>
+
     );
   }
 }
