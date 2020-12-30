@@ -7,7 +7,7 @@ class MateriFlexBox extends Component {
       <View>
         <View>
           <Text style={{fontSize: 50, fontWeight: 'bold', textAlign: 'center'}}>
-            Materi Flexbox
+            React Native
           </Text>
         </View>
         <View
@@ -17,6 +17,8 @@ class MateriFlexBox extends Component {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginBottom: 10,
+            borderColor: 'blue',
+            borderWidth: 1,
           }}>
           <View style={{backgroundColor: '#ee5253', width: 50, height: 50}} />
           <View style={{backgroundColor: '#feca57', width: 50, height: 50}} />
@@ -28,6 +30,7 @@ class MateriFlexBox extends Component {
             flexDirection: 'row',
             alignContent: 'center',
             alignItems: 'center',
+            paddingBottom: 10,
           }}>
           <Image
             source={{
@@ -49,7 +52,11 @@ class MateriFlexBox extends Component {
           style={{
             flexDirection: 'row',
             justifyContent: 'space-around',
-            paddingTop: 6,
+            paddingTop: 15,
+            paddingBottom: 15,
+            borderColor: 'blue',
+            borderWidth: 1,
+            backgroundColor: 'yellow',
           }}>
           <Text>Beranda</Text>
           <Text>Video</Text>

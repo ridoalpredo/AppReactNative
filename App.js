@@ -3,6 +3,7 @@ import {View, ScrollView} from 'react-native';
 import MateriFlexBox from './MateriFlexbox';
 import SampleComponent from './SampleComponent';
 import StylingReactNativeComponent from './StylingReactNativeComponent';
+import NavbarMenu from './NavbarMenu';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <ScrollView>
         {/* <SampleComponent /> */}
         <MateriFlexBox />
+        <NavbarMenu />
         <StylingReactNativeComponent />
       </ScrollView>
     </View>
