@@ -2,21 +2,24 @@ import React, {Component} from 'react';
 import {View, ScrollView} from 'react-native';
 import MateriFlexBox from './MateriFlexbox';
 import SampleComponent from './SampleComponent';
-import StylingReactNativeComponent from './StylingReactNativeComponent';
-import NavbarMenu from './NavbarMenu';
+import Product from './Product';
+import Cart from './Cart';
 import PropsDinamis from './PropsDinamis';
 import StateDinamis from './StateDinamis';
+import CommunityPropsAndState from './CommunityPropsAndState';
 
 const App = () => {
   return (
     <View>
       <ScrollView>
-        {/* <SampleComponent />
-        <MateriFlexBox />
-        <NavbarMenu />
-        <StylingReactNativeComponent />
-        <PropsDinamis /> */}
-        <StateDinamis />
+        {/* <SampleComponent /> */}
+        {/* <MateriFlexBox /> */}
+        {/* <Cart /> */}
+
+        <CommunityPropsAndState />
+        {/* <Product /> */}
+        {/* <PropsDinamis /> */}
+        {/* <StateDinamis /> */}
       </ScrollView>
     </View>
   );

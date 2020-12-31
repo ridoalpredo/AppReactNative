@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import cart from './cart.png';
 import user from './user.png';
 
-const NavbarMenu = () => {
+const Cart = (props) => {
   return (
     <View style={{position: 'relative', marginBottom: 40}}>
       <Text style={styles.text}>BlogCara.id</Text>
@@ -17,10 +17,10 @@ const NavbarMenu = () => {
         }}>
         <View style={styles.cartWrapper}>
           <Image source={cart} style={styles.cart} />
-          <Text style={styles.textNotif}>1</Text>
+          <Text style={styles.textNotif}>{props.quantity}</Text>
         </View>
       </View>
-      <View
+      {/* <View
         style={{
           flexDirection: 'row',
           alignItems: 'center',
@@ -30,7 +30,7 @@ const NavbarMenu = () => {
         }}>
         <Text>Account</Text>
         <Image source={user} style={styles.user} />
-      </View>
+      </View> */}
     </View>
   );
 };
@@ -80,4 +80,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NavbarMenu;
+export default Cart;
