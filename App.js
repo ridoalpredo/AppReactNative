@@ -7,6 +7,7 @@ import Cart from './Cart';
 import PropsDinamis from './PropsDinamis';
 import StateDinamis from './StateDinamis';
 import CommunityPropsAndState from './CommunityPropsAndState';
+import ReactNativeSvg from './ReactNativeSvg';
 
 const App = () => {
   return (
@@ -15,11 +16,11 @@ const App = () => {
         {/* <SampleComponent /> */}
         {/* <MateriFlexBox /> */}
         {/* <Cart /> */}
-
-        <CommunityPropsAndState />
+        {/* <CommunityPropsAndState /> */}
         {/* <Product /> */}
         {/* <PropsDinamis /> */}
         {/* <StateDinamis /> */}
+        <ReactNativeSvg />
       </ScrollView>
     </View>
   );
