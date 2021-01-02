@@ -21,8 +21,8 @@ const App = () => {
         {/* <Product /> */}
         {/* <PropsDinamis /> */}
         {/* <StateDinamis /> */}
-        <ReactNativeSvg />
-        {/* <CallAPIVanila /> */}
+        {/* <ReactNativeSvg /> */}
+        <CallAPIVanila />
       </ScrollView>
     </View>
   );

@@ -1,23 +1,35 @@
-import React, {useEffect} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {Button, Image, StyleSheet, Text, View} from 'react-native';
 
 const CallAPIVanila = () => {
-  useEffect(() => {
-    // Call API Method GET
+  const [dataUser, setDataUser] = useState({
+    avatar: '',
+    email: '',
+    firts_name: '',
+    last_name: '',
+  });
 
-    //     fetch('https://reqres.in/api/users/2')
-    //       .then((response) => response.json())
-    //       .then((json) => console.log(json));
-    //   }, []);
+  const [dataJobs, setDataJobs] = useState({
+    name: '',
+    job: '',
+  });
 
-    // Call API method POST
+  useEffect(() => {}), [];
 
+  const getData = () => {
+    fetch('https://reqres.in/api/users/2')
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json);
+        setDataUser(json.data);
+      });
+  };
+
+  const postData = () => {
     const dataForAPI = {
       name: 'morpheus',
       job: 'leader',
     };
-    console.log('data object : ', dataForAPI);
-    console.log('data stringify: ', JSON.stringify(dataForAPI));
 
     fetch('https://reqres.in/api/users', {
       method: 'POST',
@@ -28,14 +40,24 @@ const CallAPIVanila = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-        console.log('post response', json);
+        console.log('post response: ', json);
+        setDataJobs(json);
       });
-  }),
-    [];
+  };
 
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Call API Vanila.js</Text>
+      <Button title="GET DATA" onPress={getData} />
+      <Text>Response GET DATA</Text>
+      <Image source={{uri: dataUser.avatar}} style={styles.avatar} />
+      <Text>{`${dataUser.firts_name} ${dataUser.last_name}`}</Text>
+      <Text>{dataUser.email}</Text>
+      <View style={styles.line} />
+      <Button title="POST DATA" onPress={postData} />
+      <Text>Response POST DATA</Text>
+      <Text>{dataJobs.name}</Text>
+      <Text>{dataJobs.job}</Text>
     </View>
   );
 };
@@ -48,5 +70,15 @@ const styles = StyleSheet.create({
   },
   container: {
     padding: 6,
+  },
+  line: {
+    height: 2,
+    backgroundColor: 'black',
+    marginVertical: 20,
+  },
+  avatar: {
+    width: 100,
+    height: 100,
+    borderRadius: 100,
   },
 });
