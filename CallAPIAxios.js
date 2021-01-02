@@ -30,19 +30,6 @@ const CallAPIAxios = () => {
       job: 'leader',
     };
 
-    // fetch('https://reqres.in/api/users', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(dataForAPI),
-    // })
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     console.log('post response: ', json);
-    //     setDataJobs(json);
-    //   });
-
     axios
       .post('https://reqres.in/api/users', dataForAPI)
       .then((result) => {

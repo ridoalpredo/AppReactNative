@@ -10,6 +10,7 @@ import CommunityPropsAndState from './CommunityPropsAndState';
 import ReactNativeSvg from './ReactNativeSvg';
 import CallAPIVanila from './CallAPIVanila';
 import CallAPIAxios from './CallAPIAxios';
+import Crud from './Crud';
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
         {/* <StateDinamis /> */}
         {/* <ReactNativeSvg /> */}
         {/* <CallAPIVanila /> */}
-        <CallAPIAxios />
+        {/* <CallAPIAxios /> */}
+        <Crud />
       </ScrollView>
     </View>
   );
