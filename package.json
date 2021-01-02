@@ -11,6 +11,7 @@
     "emulator-android": "~/Library/Android/sdk/emulator/emulator -avd avdku"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-svg": "^12.1.0"

@@ -9,6 +9,7 @@ import StateDinamis from './StateDinamis';
 import CommunityPropsAndState from './CommunityPropsAndState';
 import ReactNativeSvg from './ReactNativeSvg';
 import CallAPIVanila from './CallAPIVanila';
+import CallAPIAxios from './CallAPIAxios';
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
         {/* <PropsDinamis /> */}
         {/* <StateDinamis /> */}
         {/* <ReactNativeSvg /> */}
-        <CallAPIVanila />
+        {/* <CallAPIVanila /> */}
+        <CallAPIAxios />
       </ScrollView>
     </View>
   );
