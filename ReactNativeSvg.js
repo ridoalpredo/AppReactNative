@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import ImageSvg from './ImageSvg.svg';
+import ImageSvg from '././Source/Image/ImageSvg.svg';
 
 const ReactNativeSvg = () => {
   return (

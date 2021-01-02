@@ -8,6 +8,7 @@ import PropsDinamis from './PropsDinamis';
 import StateDinamis from './StateDinamis';
 import CommunityPropsAndState from './CommunityPropsAndState';
 import ReactNativeSvg from './ReactNativeSvg';
+import CallAPIVanila from './CallAPIVanila';
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
         {/* <Product /> */}
         {/* <PropsDinamis /> */}
         {/* <StateDinamis /> */}
-        <ReactNativeSvg />
+        {/* <ReactNativeSvg /> */}
+        <CallAPIVanila />
       </ScrollView>
     </View>
   );
