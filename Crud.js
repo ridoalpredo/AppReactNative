@@ -1,5 +1,57 @@
+import axios from 'axios';
 import React, {useState} from 'react';
 import {Button, StyleSheet, Text, TextInput, View, Image} from 'react-native';
+
+const Crud = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [bidang, setBidang] = useState('');
+
+  const submit = () => {
+    const data = {
+      name,
+      email,
+      bidang,
+    };
+
+    axios.post(' http://10.0.2.2:3004/user', data).then((res) => {
+      console.log('res: ', res);
+      setName('');
+      setEmail('');
+      setBidang('');
+    });
+  };
+  return (
+    <View style={styles.container}>
+      <Text style={styles.tittle}>UI CRUD</Text>
+      <View style={styles.line} />
+      <Text style={styles.container}>Masukkan Anggota React Native</Text>
+      <TextInput
+        placeholder="Nama Lengkap"
+        style={styles.textInput}
+        value={name}
+        onChangeText={(value) => setName(value)}
+      />
+      <TextInput
+        placeholder="Email"
+        style={styles.textInput}
+        value={email}
+        onChangeText={(value) => setEmail(value)}
+      />
+      <TextInput
+        placeholder="Bidang"
+        style={styles.textInput}
+        value={bidang}
+        onChangeText={(value) => setBidang(value)}
+      />
+      <Button title="SIMPAN" onPress={submit} />
+      <View style={styles.line} />
+      <DataAnggota />
+      <DataAnggota />
+      <DataAnggota />
+    </View>
+  );
+};
 
 const DataAnggota = () => {
   return (
@@ -17,24 +69,6 @@ const DataAnggota = () => {
       <View>
         <Text style={styles.delete}>X</Text>
       </View>
-    </View>
-  );
-};
-
-const Crud = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.tittle}>UI CRUD</Text>
-      <View style={styles.line} />
-      <Text style={styles.container}>Masukkan Anggota React Native</Text>
-      <TextInput placeholder="Nama Lengkap" style={styles.textInput} />
-      <TextInput placeholder="Email" style={styles.textInput} />
-      <TextInput placeholder="Bidang" style={styles.textInput} />
-      <Button title="SIMPAN" />
-      <View style={styles.line} />
-      <DataAnggota />
-      <DataAnggota />
-      <DataAnggota />
     </View>
   );
 };

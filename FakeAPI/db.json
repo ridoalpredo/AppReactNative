@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Rido Alpredo",
+      "email": "ridohaloho@gmail.com",
+      "bidang": "RN FrontEnd"
+    },
+    {
+      "name": "Rido Alpredo 1",
+      "email": "ridohaloho@gmail.com",
+      "bidang": "RN FrontEnd",
+      "id": 2
+    },
+    {
+      "name": "rido alpredo 1",
+      "email": "rido31@gmail.com",
+      "bidang": "RN DEV 111",
+      "id": 3
+    },
+    {
+      "name": "rido alpredo sihaloho",
+      "email": "ridohaloho@gmail.com",
+      "bidang": "RN DEV 2021",
+      "id": 4
+    },
+    {
+      "name": "rido",
+      "email": "alpredo",
+      "bidang": "sihaloho",
+      "id": 5
+    },
+    {
+      "name": "rido 1",
+      "email": "alpredo 1",
+      "bidang": "sihaloho 1",
+      "id": 6
+    },
+    {
+      "name": "rido 3",
+      "email": "alpredo 3",
+      "bidang": "sihaloho 3",
+      "id": 7
+    }
+  ]
+}
